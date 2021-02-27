@@ -14,7 +14,7 @@ public class LoginSteps {
 	
 	@Given("^Потребителя отваря екрана за вход в системата$")
 	public void OpenLoginScreen() throws Throwable {
-	loginPageModel.navigatetoLoginScreen();
+	loginPageModel.navigatetoMe();
 
 	}
 

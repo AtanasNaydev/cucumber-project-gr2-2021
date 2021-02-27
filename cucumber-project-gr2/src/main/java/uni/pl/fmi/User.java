@@ -13,7 +13,9 @@ public class User {
 
     private String email;
 
-    private String firstname;
+  
+
+	private String firstname;
 
     private String lastname;
 
@@ -23,7 +25,12 @@ public class User {
      */
     public User() {
     }
-
+    public User(String username, String password, String email) {
+  		super();
+  		this.username = username;
+  		this.password = password;
+  		this.email = email;
+  	}
     /**
      * @return
      */

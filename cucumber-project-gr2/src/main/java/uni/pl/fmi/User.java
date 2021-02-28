@@ -6,36 +6,33 @@ import java.util.*;
  */
 public class User {
 
- 
     private String username;
 
     private String password;
 
+    
     private String email;
 
+   
+    private boolean isAdmin;
+
+    public Set<Comment> comment;
+
+    public Set<Topic> topic;
+
   
-
-	private String firstname;
-
-    private String lastname;
-
-    private Set<Order> orders=new HashSet<>();
+  
     /**
      * Default constructor
      */
     public User() {
     }
-    public User(String username, String password, String email) {
-  		super();
-  		this.username = username;
-  		this.password = password;
-  		this.email = email;
-  	}
     /**
      * @return
      */
     public String getUsername() {
-     return username;
+        // TODO implement here
+        return "";
     }
 
     /**
@@ -44,28 +41,15 @@ public class User {
      */
     public void setUsername(String username) {
     	this.username=username;
-    }
-
-    /**
-     * @return
-     */
-    public String getEmail() {
-    	return email;
-    }
-
-    /**
-     * @param email 
-     * @return
-     */
-    public void setEmail(String email) {
-    	this.email=email;
+       
     }
 
     /**
      * @return
      */
     public String getPassword() {
-    	 return password;
+        // TODO implement here
+        return "";
     }
 
     /**
@@ -73,58 +57,92 @@ public class User {
      * @return
      */
     public void setPassword(String password) {
-    	this.password=password;
+       
     }
 
     /**
      * @return
      */
-    public Set<Order> getOrders() {
-    	return orders;
+    public String getEmail() {
+        // TODO implement here
+        return "";
     }
 
     /**
-     * @param order 
+     * @param email 
      * @return
      */
-    public void setOrder(Set<Order> orders) {
-        this.orders=orders;
+    public void setEmail(String email) {
+     
     }
 
     /**
-     * @param order 
      * @return
      */
-    public void addOrder(Order order) {
-     this.orders.add(order);
+    public boolean getisAdmin() {
+		return isAdmin;
+    
     }
 
-	/**
-	 * @return the firstname
-	 */
-	public String getFirstname() {
-		return firstname;
-	}
+    /**
+     * @param isAdmin 
+     * @return
+     */
+    public void setisAdmin(boolean isAdmin) {
+      this.isAdmin=isAdmin;
+    }
 
-	/**
-	 * @param firstname the firstname to set
-	 */
-	public void setFirstname(String firstname) {
-		this.firstname = firstname;
-	}
+    /**
+     * @return
+     */
+    public Set getComment() {
+        // TODO implement here
+        return null;
+    }
 
-	/**
-	 * @return the lastname
-	 */
-	public String getLastname() {
-		return lastname;
-	}
+    /**
+     * @param comment 
+     * @return
+     */
+  
 
+    /**
+     * @param comment 
+     * @return
+     */
+    public void addComment(Comment comment) {
+   
+     
+    }
 	/**
-	 * @param lastname the lastname to set
+	 * @return the isAdmin
 	 */
-	public void setLastname(String lastname) {
-		this.lastname = lastname;
+	public boolean isAdmin() {
+		return isAdmin;
+	}
+	/**
+	 * @param isAdmin the isAdmin to set
+	 */
+	public void setAdmin(boolean isAdmin) {
+		this.isAdmin = isAdmin;
+	}
+	/**
+	 * @return the topic
+	 */
+	public Set<Topic> getTopic() {
+		return topic;
+	}
+	/**
+	 * @param topic the topic to set
+	 */
+	public void setTopic(Set<Topic> topic) {
+		this.topic = topic;
+	}
+	/**
+	 * @param comment the comment to set
+	 */
+	public void setComment(Set<Comment> comment) {
+		this.comment = comment;
 	}
 
 }
